@@ -15,7 +15,7 @@ const getPokemon = async () => {
         `;
     } catch (error) {
         console.error('Error:', error);
-        document.getElementById('pokemon-container').innerHTML = 'Error loading Pokemon!';
+        document.getElementById('pokemon-container').innerHTML = 'Error loading Pokemon API!';
     }
 };
 
