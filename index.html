@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karan's Website</title>
-</head>
-<body>
-    <h1>Welcome to Karan's Site</h1>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="script.js"></script>
+
+<body class="bg-indigo-100">
+
+    <main>
+        <div class="flex flex-col">
+            <h1
+                class="mb-4 mt-4 mx-auto text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
+                Welcome to Karan's Site
+            </h1>
+            <div class="bg-white bio-container border border-indigo-600 rounded-2xl shadow-md">
+                <div class="flex flex-row justify-between items-center">
+                    <figure>
+                        <img id="profile_pic" class="rounded-2xl mb-4" src="profilepic.png" alt="karan picture">
+                        <figcaption><i>Karan @ Portobello Beach, Scottland</i></figcaption>
+                    </figure>
+
+                    <div id="pokemon-container" class="pb-2"></div>
+                </div>
+
+
+                <hr class="mb-2">
+                <p class="bio-text">
+                    Software engineer and product leader currently at Cornell Tech, with experience building enterprise
+                    solutions at New Relic and DTEX Systems. I specialize in full-stack development, focusing
+                    on
+                    creating scalable systems, and products that people love using.
+                </p>
+            </div>
+            <section>
+                <div class="flex-col bg-white border mt-4 rounded-2xl mx-6 shadow-2xl mb-6">
+                    <h2
+                        class="mx-auto text-4xl font-bold leading-none tracking-tight text-gray-900 lg:text-4xl text-center py-4">
+                        Work Experience
+                    </h2>
+
+                    <div class="company-grid">
+                        <a href="https://www.liferaft.co/company/">
+                            <div class="company-card">
+                                <img src="/company_logos/liferaft.svg" alt="Liferaft Logo" class="company-logo">
+                                <p>Software Engineer</p>
+                            </div>
+                        </a>
+                        <a href="https://www.newrelic.com">
+                            <div class="company-card">
+                                <img src="/company_logos/newrelic.svg" alt="New Relic Logo" class="company-logo">
+                                <p>Product Manager</p>
+                            </div>
+                        </a>
+                        <a href="https://www.dtexsystems.com/">
+                            <div class="company-card">
+                                <img src="/company_logos/dtex.png" alt="DTEX Systems Logo" class="company-logo">
+                                <p>Software Engineer</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
+
 </html>
