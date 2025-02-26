@@ -1,3 +1,8 @@
+    /* learned about the transition element, transitions are really complicated honestly. 
+        transitions often involve some sort of math that is involved and basic algebra
+        that goes into these. Tehse transitions often require multiple css properties. 
+    */
+
 .bio-container {
     max-width: 700px;
     margin: 0 auto;
